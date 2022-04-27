@@ -14,4 +14,8 @@
 
 ### Fixed
 
+- Fix site.webmanifest path error
+
 ### Removed
+
+- Remove useless zip
