@@ -5,6 +5,8 @@
 - Add a changelog
 - Add ESLint
 - Add Prettier
+- Add scss norm
+- Add Roboto font-family
 
 ### Changed
 

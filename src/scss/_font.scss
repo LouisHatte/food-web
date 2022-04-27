@@ -1,0 +1,56 @@
+@use "sass:map";
+
+@use "scss/color";
+
+$font-weights: (
+  "regular": 400,
+  "black": 900,
+);
+
+$font-sizes: (
+  "xxxs": (
+    "size": 12px,
+    "line-height": 20px,
+  ),
+  "xxs": (
+    "size": 14px,
+    "line-height": 22px,
+  ),
+  "xs": (
+    "size": 16px,
+    "line-height": 24px,
+  ),
+  "sm": (
+    "size": 20px,
+    "line-height": 28px,
+  ),
+  "md": (
+    "size": 24px,
+    "line-height": 32px,
+  ),
+  "lg": (
+    "size": 30px,
+    "line-height": 38px,
+  ),
+  "xl": (
+    "size": 38px,
+    "line-height": 46px,
+  ),
+  "xxl": (
+    "size": 46px,
+    "line-height": 54px,
+  ),
+  "xxxl": (
+    "size": 56px,
+    "line-height": 64px,
+  ),
+);
+
+@mixin app-font($weight, $size) {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  color: color.$neutral9;
+
+  font-weight: map.get($font-weights, $weight);
+  font-size: map.get($font-sizes, $size, "size");
+  line-height: map.get($font-sizes, $size, "line-height");
+}

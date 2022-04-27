@@ -1,6 +1,8 @@
+@use "scss/font" as f;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  @include f.app-font("regular", "xxs");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
