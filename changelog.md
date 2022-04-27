@@ -2,6 +2,16 @@
 
 ### Added
 
+### Changed
+
+### Fixed
+
+### Removed
+
+## [0.1.9] - 2022-04-27
+
+### Added
+
 - Add a changelog
 - Add ESLint
 - Add Prettier
